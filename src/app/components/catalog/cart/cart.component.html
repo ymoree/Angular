@@ -1,0 +1,37 @@
+<div>
+  <div class="films__totalPrice-clearCart">
+    <span>Цена {{ filmService.cartTotal | currency:'USD'}}</span>
+    <button (click)="clearCart()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Очистить корзину</button>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Купить</button>
+  </div>
+
+  <div class="films" >
+    <div class="film" *ngFor="let cartItem of cartItems">
+      <div class="film__quality" title="Хорошее качество">{{ cartItem.quality }}</div>
+      <button (click)="deleteFromCart(cartItem)"></button>
+      <div class="film__image">
+        <img src="{{ cartItem.imgURL }}" alt="">
+        <div class="film__background"></div>
+      </div>
+
+      <div class="film__info">
+        <div class="film__info-title">{{ cartItem.name }}</div>
+        <div class="film__info-category">{{ cartItem.category }}</div>
+        <div class="film__info-price">{{ cartItem.price | currency:'USD'}}</div>
+        <span class="film__info-year">{{ cartItem.year }}</span>
+      </div>
+    </div>
+  </div>
+</div>

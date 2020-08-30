@@ -1,0 +1,31 @@
+<div class="film">
+  <div class="film__quality" title="Хорошее качество">{{ filmItem.quality }}</div>
+  <div class="film__image">
+    <img src="{{ filmItem.imgURL }}" alt="">
+    <div class="film__hover">
+      <p>Смотреть трейлер</p>
+    </div>
+  </div>
+
+  <div class="film__info">
+    <div class="film__info-title">{{ filmItem.name }}</div>
+    <div class="film__info-category">{{ filmItem.category }}</div>
+    <div class="film__info-price">{{ filmItem.price | currency:'USD'}}</div>
+    <span class="film__info-year">{{ filmItem.year }}</span>
+    <div class="buttons">
+      <button (click)="handleAddToCart()" *ngIf="!filmItem.inCart">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Add</button>
+      <button (click)="handleDeleteFromCart()" *ngIf="filmItem.inCart">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Remove</button>
+    </div>
+  </div>
+</div>

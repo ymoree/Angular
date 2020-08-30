@@ -1,0 +1,9 @@
+<script src="film.component.ts"></script>
+<div class="films" >
+  <app-film-item
+    *ngFor="let film of filmService.films"
+    [filmItem]="film"
+    (onAddFilm)="onAddFilm.emit($event)"
+    (onDeleteFilm)="onDeleteFilm.emit($event)"
+  ></app-film-item>
+</div>

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-09/1537825782-1157658703-venom.jpg",
+    "name": "Веном",
+    "category": "Боевик / Фантастика",
+    "price": 11.50,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 2,
+    "quality": "HDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-04/1524583402-127388859-mstiteli-voyna-beskonechnosti.jpg",
+    "name": "Мстители: Война бесконечности",
+    "category": "Боевик / Фантастика",
+    "price": 15,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 3,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-11/1542208688-1947854827-akvamen.jpg",
+    "name": "Аквамен",
+    "category": "Боевики / Приключения / Фантастика",
+    "price": 7.50,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 4,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2019-04/1556041628-1970004707-mstiteli-final.jpg",
+    "name": "Мстители: Финал",
+    "category": "Боевики / Приключения / Фантастик",
+    "price": 12.50,
+    "year": 2019,
+    "inCart": false
+  },
+  {
+    "id": 5,
+    "quality": "HDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2019-01/1548771255-822073851-alita-boevoy-angel.jpg",
+    "name": "Алита: Боевой ангел",
+    "category": "Боевики / Мелодрама / Приключени",
+    "price": 8,
+    "year": 2019,
+    "inCart": false
+  },
+  {
+    "id": 6,
+    "quality": "HDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2019-02/1549058690-791538044-kapitan-marvel.jpg",
+    "name": "Капитан Марвел",
+    "category": "Боевики / Приключения / Фантастика",
+    "price": 11.50,
+    "year": 2019,
+    "inCart": false
+  },
+  {
+    "id": 7,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-05/1526485117-1715763610-dedpul-2.jpg",
+    "name": "Дэдпул 2",
+    "category": "Боевики / Комедии / Приключения",
+    "price": 13,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 8,
+    "quality": "HDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-01/1517159576-1897341474-chernaya-pantera.jpg",
+    "name": "Черная Пантера",
+    "category": "Боевики / Приключения / Фантастика",
+    "price": 10,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 9,
+    "quality": "HDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-08/1533242634-275312949-meg-monstr-glubiny.jpg",
+    "name": "Мэг: Монстр глубины",
+    "category": "Боевики / Триллер / Ужасы / Фантаст",
+    "price": 5.50,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 10,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2018-12/1544377433-1894218702-bamblbi.jpg",
+    "name": "Бамблби",
+    "category": "Боевики / Приключения / Фантастик",
+    "price": 11.50,
+    "year": 2018,
+    "inCart": false
+  },
+  {
+    "id": 11,
+    "quality": "BDRip",
+    "imgURL" :"https://filmets.cc/uploads/posts/2017-12/1512946724-779818789-ono.jpg",
+    "name": "Оно",
+    "category": "Триллер / Ужасы",
+    "price": 9,
+    "year": 2017,
+    "inCart": false
+  }
+]

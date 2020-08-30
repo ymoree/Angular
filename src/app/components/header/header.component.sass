@@ -1,0 +1,117 @@
+$textColor: #000
+$bgColor: #fff
+$hoverColor: #FFB10A
+
+
+header
+  height: 67px
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  background: $bgColor
+  z-index: 11
+  nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    position: relative
+  ul
+    display: flex
+    flex-direction: row
+    list-style-type: none
+    li
+      padding: 17px 7px
+      a
+        font-size: 14px
+        font-weight: 600
+        text-transform: uppercase
+        color: $textColor
+        padding: 5px 10px
+        &:hover
+          color: $hoverColor
+    li:last-child
+      a
+        color: #bdbdbd
+        font-size: 12px
+  .find
+    display: flex
+    flex-direction: row
+    margin-left: 55px
+    input
+      width: 100%
+      height: 28px
+      border: none
+      border-right: none
+      font-size: 13px
+      padding: 0 10px
+      border-left: 1px solid rgb(231, 231, 231)
+    button
+      font-size: 12px
+      font-weight: 700
+      text-transform: uppercase
+      width: 80px
+      height: 30px
+      line-height: 30px
+      text-align: center
+      background: $bgColor
+      color: $textColor
+      cursor: pointer
+      margin-left: 15px
+      &:hover
+        color: $hoverColor
+  .cart
+    position: absolute
+    right: 0
+    a
+      float: right
+      background: $hoverColor
+      font-size: 13px
+      padding: 6px 15px
+      border-radius: 20px
+      &:hover
+        background: #ffd012
+      i
+        margin-right: 4px
+
+
+@media screen and (max-width: 1440px)
+  li
+    a
+      font-size: 12px !important
+  li:last-child
+    display: none
+
+@media screen and (max-width: 1200px)
+  .find
+    input
+      display: none
+    button
+      display: none
+
+@media screen and (max-width: 768px)
+  .logo
+    img
+      width: 105px
+  li
+    a
+      font-size: 11px !important
+      padding: 5px 5px
+  ul
+    li:first-child
+      display: none
+
+@media screen and (max-width: 576px)
+  ul
+    li:nth-child(4)
+      display: none
+
+@media screen and (max-width: 506px)
+  ul
+    padding: 0
+
+@media screen and (max-width: 406px)
+  ul
+    li:nth-child(3)
+      display: none
+

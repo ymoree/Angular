@@ -1,0 +1,25 @@
+<main>
+  <div class="container">
+    <div class="content">
+      <div class="title">
+        <h1 id="films">Самые популярные фильмы</h1>
+      </div>
+      <app-film
+        (onAddFilm)="addFilm($event)"
+        (onDeleteFilm)="deleteFilmInFilmsBlock($event)"
+      ></app-film>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="title">
+        <h1 id="cart">Корзина</h1>
+      </div>
+      <app-cart
+        (deleteFromCart_2)="deleteFilmInCartBlock($event)"
+        (CartTotal)="countCartTotal()"
+        (onClear)="onClear()"
+        [cartItems]="filmService.cart"></app-cart>
+    </div>
+  </div>
+</main>

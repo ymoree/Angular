@@ -1,0 +1,166 @@
+$bgColor: white
+
+%noWrapText
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.film
+  width: 100%
+  max-width: 236px
+  height: auto
+  position: relative
+  box-shadow: 0 0 18px rgba(214,214,214,0.6)
+  justify-self: center
+  margin: 0 auto
+  .film__image
+    width: 100%
+    height: 347px
+    position: relative
+    img
+      width: 100%
+      height: 347px
+    .film__hover
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      background: #000000
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 0
+      transition: 0.3s all ease
+      &:hover
+        opacity: 0.5
+        p
+          opacity: 1
+          color: #ffffff
+          font-size: 16px
+
+  .film__quality
+    position: absolute
+    top: 0px
+    left: -4px
+    padding: 5px 10px
+    background: #FFB10A
+    color: $bgColor
+    font-size: 14px
+    z-index: 10
+  .film__info
+    padding: 20px 20px 18px
+    background: #fff
+    position: relative
+    .film__info-title
+      font-size: 14px
+      line-height: 17px
+      font-weight: 700
+      margin-bottom: 5px
+      @extend %noWrapText
+    .film__info-category
+      font-size: .85em
+      color: #7d7d7d
+      @extend %noWrapText
+    .film__info-price
+      display: inline-block
+      color: #FFB10A
+      font-size: 1.1em
+      font-weight: 700
+      margin-top: 10px
+    .film__info-year
+      float: right
+      color: rgb(201, 201, 201)
+      font-weight: 600
+      margin-top: 10px
+  .buttons
+    text-align: center
+    button
+      cursor: pointer
+      padding: 5px 11px
+      background: $bgColor
+      color: #FFB10A
+      letter-spacing: 2px
+      box-shadow: 0px 0px 6px rgba(0,0,0,.2)
+      position: relative
+      overflow: hidden
+      & span:nth-child(1)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: linear-gradient(to right, #faf4e8,  #ffb10a)
+        animation: anim-1 2s linear infinite
+      & span:nth-child(2)
+        position: absolute
+        top: 0
+        right: 0
+        width: 1px
+        height: 100%
+        background: linear-gradient(to bottom, #faf4e8, #ffb10a)
+        animation: anim-2 2s linear infinite
+        animation-delay: 1s
+      & span:nth-child(3)
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: linear-gradient(to left, #faf4e8, #ffb10a)
+        animation: anim-3 2s linear infinite
+      & span:nth-child(4)
+        position: absolute
+        top: 0
+        left: 0
+        width: 1px
+        height: 100%
+        background: linear-gradient(to top, #faf4e8, #ffb10a)
+        animation: anim-4 2s linear infinite
+        animation-delay: 1s
+
+@keyframes anim-1
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(100%)
+@keyframes anim-2
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(100%)
+@keyframes anim-3
+  0%
+    transform: translateX(100%)
+  100%
+    transform: translateX(-100%)
+@keyframes anim-4
+  0%
+    transform: translateY(100%)
+  100%
+    transform: translateY(-100%)
+
+
+@media screen and (max-width: 1200px)
+  .film
+      max-width: 257px
+
+@media screen and (max-width: 992px)
+  .film
+    max-width: 240px
+
+@media screen and (max-width: 855px)
+  .film
+    max-width: 212px
+
+@media screen and (max-width: 768px)
+  .film
+    max-width: 246px
+
+@media screen and (max-width: 576px)
+  .film
+    max-width: 212px
+
+@media screen and (max-width: 506px)
+  .film
+    max-width: 250px
